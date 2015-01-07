@@ -337,6 +337,7 @@ def rtexec(directory, action=None, version=VERSION, **kwargs):
     exe = 'rtexec'
     # Optionally, use keywords instead of options?
     # This may go away:
+    options = ""
     if action == "restart":
         options = '-f ' + options
     elif action == "stop":
